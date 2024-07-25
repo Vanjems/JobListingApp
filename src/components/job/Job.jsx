@@ -20,29 +20,33 @@ export default function Job() {
         </div>
         
         {/* This div will be the filter and Job Listing View */}
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
-          <div className="flex flex-col justify-center items-center w-auto h-[350px] bg-red-200 p-5">
-            <h2 className="text-2xl font-bold mb-4">Filter</h2>
+        <div className="container mx-auto flex flex-col md:flex-row gap-10 mt-10">
+          <div className="flex flex-col w-full md:w-1/3 h-auto bg-red-200 p-5">
+            <h2 className="text-2xl font-bold mb-4 text-center">Filter</h2>
             <div className="mb-4">
               <h3 className="font-semibold mb-2">Job Type</h3>
-              <div className="flex flex-col">
+              <div className="grid grid-cols-2">
                 <label className="inline-flex items-center">
-                  <input type="checkbox" className="form-checkbox" />
-                  <span className="ml-2">Full-time</span>
+                    <input type="checkbox" className="form-checkbox" />
+                    <span className="ml-2">All</span>
                 </label>
-                <label className="inline-flex items-center mt-2">
-                  <input type="checkbox" className="form-checkbox" />
-                  <span className="ml-2">Part-time</span>
+                  <label className="inline-flex items-center mt-2">
+                    <input type="checkbox" className="form-checkbox" />
+                    <span className="ml-2">Full-time</span>
                 </label>
-                <label className="inline-flex items-center mt-2">
-                  <input type="checkbox" className="form-checkbox" />
-                  <span className="ml-2">Remote</span>
+                  <label className="inline-flex items-center mt-2">
+                    <input type="checkbox" className="form-checkbox" />
+                    <span className="ml-2">Part-time</span>
+                </label>
+                  <label className="inline-flex items-center mt-2">
+                    <input type="checkbox" className="form-checkbox" />
+                    <span className="ml-2">Remote</span>
                 </label>
               </div>
             </div>
             <div>
               <h3 className="font-semibold mb-2">Location</h3>
-              <div className="flex flex-col">
+              <div className="grid grid-cols-2">
                 <label className="inline-flex items-center">
                   <input type="checkbox" className="form-checkbox" />
                   <span className="ml-2">All</span>
@@ -62,21 +66,58 @@ export default function Job() {
               </div>
             </div>
           </div>
-          <div className="w-auto h-[450px] bg-red-200 p-5">
-            <h2 className="text-2xl font-bold mb-4">Job List</h2>
+          <div className="w-full md:w-2/3 h-auto bg-red-200 p-5">
+            <h2 className="text-2xl font-bold mb-4 text-center">Job List</h2>
             {/* Job listing items will go here */}
             <div className="space-y-4">
-              <div className="bg-white p-4 rounded-md shadow-md">
-                <div className="flex flex-col items-center">
-                  <div className="w-32 h-32 bg-gray-200 flex items-center justify-center mb-4">
-                    Company Logo or Image Portion
+              <div className="bg-gray-400 p-4 rounded-md shadow-md grid grid-cols-1 md:grid-cols-2 gap-4 overflow-auto h-[400px]">
+                  <div className="bg-white p-4 rounded-md shadow-md flex items-center justify-center">
+                    <div className="flex flex-col items-center">
+                      <div className="w-32 h-32 bg-gray-200 flex items-center justify-center mb-4">
+                        Company Logo or Image Portion
+                      </div>
+                      <div className="w-full h-24 bg-gray-200 mb-4">
+                        {/* Job details here */}
+                      </div>
+                      <button className="px-4 py-2 bg-gray-500 text-white rounded-md">More Details</button>
+                    </div>
                   </div>
-                  <div className="w-full h-24 bg-gray-200 mb-4">
-                    {/* Job details here */}
+                  <div className="bg-white p-4 rounded-md shadow-md flex items-center justify-center">
+                    <div className="flex flex-col items-center">
+                      <div className="w-32 h-32 bg-gray-200 flex items-center justify-center mb-4">
+                        Company Logo or Image Portion
+                      </div>
+                      <div className="w-full h-24 bg-gray-200 mb-4">
+                        {/* Job details here */}
+                      </div>
+                      <button className="px-4 py-2 bg-gray-500 text-white rounded-md">More Details</button>
+                    </div>
                   </div>
-                  <button className="px-4 py-2 bg-gray-500 text-white rounded-md">Apply Now</button>
-                </div>
+                  <div className="bg-white p-4 rounded-md shadow-md flex items-center justify-center">
+                    <div className="flex flex-col items-center">
+                      <div className="w-32 h-32 bg-gray-200 flex items-center justify-center mb-4">
+                        Company Logo or Image Portion
+                      </div>
+                      <div className="w-full h-24 bg-gray-200 mb-4">
+                        {/* Job details here */}
+                      </div>
+                      <button className="px-4 py-2 bg-gray-500 text-white rounded-md">More Details</button>
+                    </div>
+                  </div>
+                  <div className="bg-white p-4 rounded-md shadow-md flex items-center justify-center">
+                    <div className="flex flex-col items-center">
+                      <div className="w-32 h-32 bg-gray-200 flex items-center justify-center mb-4">
+                        Company Logo or Image Portion
+                      </div>
+                      <div className="w-full h-24 bg-gray-200 mb-4">
+                        {/* Job details here */}
+                      </div>
+                      <button className="px-4 py-2 bg-gray-500 text-white rounded-md">More Details</button>
+                    </div>
+                  </div>
               </div>
+              
+              
               {/* Repeat the above div for more job listings */}
             </div>
           </div>
