@@ -26,16 +26,16 @@ export default function Header() {
 
         {/* Navigation Links - Visible on medium and larger screens */}
         <ul className="hidden md:flex gap-x-20 justify-center items-center">
-          <li className="hover:text-yellow-500 hover:underline duration-300">
+          <li className="hover:text-yellow-500  duration-300">
             <a href="#">Home</a>
           </li>
-          <li className="hover:text-yellow-500 hover:underline duration-300">
+          <li className="hover:text-yellow-500 duration-300">
             <a href="#">Job</a>
           </li>
-          <li className="hover:text-yellow-500 hover:underline duration-300">
+          <li className="hover:text-yellow-500 duration-300">
             <a href="#">About us</a>
           </li>
-          <li className="hover:text-yellow-500 hover:underline duration-300">
+          <li className="hover:text-yellow-500 duration-300">
             <a href="#">Contact</a>
           </li>
         </ul>
@@ -61,22 +61,22 @@ export default function Header() {
         {menuOpen && (
           <div className="absolute top-20 right-0 bg-white shadow-md p-5 flex flex-col gap-y-5 w-64 z-10 md:hidden">
             <ul>
-              <li className="hover:text-yellow-500 hover:underline duration-300">
+              <li className="hover:text-yellow-500 duration-300">
                 <a href="#">Home</a>
               </li>
-              <li className="hover:text-yellow-500 hover:underline duration-300">
+              <li className="hover:text-yellow-500 duration-300">
                 <a href="#">Job</a>
               </li>
-              <li className="hover:text-yellow-500 hover:underline duration-300">
+              <li className="hover:text-yellow-500 duration-300">
                 <a href="#">About us</a>
               </li>
-              <li className="hover:text-yellow-500 hover:underline duration-300">
+              <li className="hover:text-yellow-500 duration-300">
                 <a href="#">Contact</a>
               </li>
-              <li className="hover:text-yellow-500 hover:underline duration-300">
+              <li className="hover:text-yellow-500 duration-300">
                 <a href="#">Sign In</a>
               </li>
-              <li className="hover:text-yellow-500 hover:underline duration-300">
+              <li className="hover:text-yellow-500 duration-300">
                 <a href="#">Sign Up</a>
               </li>
             </ul>
