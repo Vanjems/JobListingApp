@@ -53,10 +53,10 @@ export default function Contact() {
           <div className="flex flex-col items-center gap-2 w-full">
             <div className="text-lg font-bold mb-2">Follow Us</div>
             <div className="flex flex-row justify-center items-center gap-2 mb-10">
-              <a href="https://www.facebook.com/" className="text-black hover:text-yellow-700"><Facebook size={24} /></a>
-              <a href="https://www.instagram.com/" className="text-black hover:text-yellow-700"><Instagram size={24} /></a>
-              <a href="https://x.com/?lang=en" className="text-black hover:text-yellow-700"><Twitter size={24} /></a>
-              <a href="https://www.linkedin.com/" className="text-black hover:text-yellow-700"><Linkedin size={24} /></a>
+              <a href="https://www.facebook.com/" className="text-black hover:text-yellow-700"><Facebook size={30} /></a>
+              <a href="https://www.instagram.com/" className="text-black hover:text-yellow-700"><Instagram size={30} /></a>
+              <a href="https://x.com/?lang=en" className="text-black hover:text-yellow-700"><Twitter size={30} /></a>
+              <a href="https://www.linkedin.com/" className="text-black hover:text-yellow-700"><Linkedin size={30} /></a>
             </div>
           </div>
         </div>
