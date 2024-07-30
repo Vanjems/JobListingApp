@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 export default function Job() {
   return (
     <div>
@@ -79,7 +80,7 @@ export default function Job() {
                       <div className="w-full h-24 bg-gray-200 mb-4">
                         {/* Job details here */}
                       </div>
-                      <button className="px-4 py-2 bg-gray-500 text-white rounded-md">More Details</button>
+                      <a className="px-4 py-2 bg-gray-500 text-white rounded-md" href='/jobdetailspage'>More Details</a>
                     </div>
                   </div>
                   <div className="bg-white p-4 rounded-md shadow-md flex items-center justify-center">
