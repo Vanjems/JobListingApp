@@ -1,0 +1,174 @@
+[
+    {
+      "id": 1,
+      "jobTitle": "Software Developer",
+      "companyName": "Tech Innovators Inc.",
+      "location": "Luzon",
+      "type": "Full-Time",
+      "monthlySalaryRange": "Php 60,000 - Php 80,000",
+      "jobDescription": "We are looking for a skilled software developer to join our dynamic team.",
+      "jobRequirements": [
+        "Bachelor's degree in Computer Science or related field",
+        "3+ years of experience with React.js",
+        "Proficiency in JavaScript, HTML, and CSS",
+        "Experience with RESTful APIs",
+        "Strong problem-solving skills"
+      ],
+      "howToApply": "Please send your resume and cover letter to jobs@techinnovators.com.",
+      "companyInformation": "Tech Innovators Inc. is a leading technology company specializing in innovative solutions for the tech industry."
+    },
+    {
+      "id": 2,
+      "jobTitle": "Health Technology Developer",
+      "companyName": "HealthTech Solutions",
+      "location": "Mindanao",
+      "type": "Part-Time",
+      "monthlySalaryRange": "Php 30,000 - Php 50,000",
+      "jobDescription": "Join our team to develop cutting-edge health technology solutions.",
+      "jobRequirements": [
+        "Experience with Python and Django",
+        "Knowledge of healthcare regulations",
+        "Ability to work in a fast-paced environment",
+        "Strong analytical skills"
+      ],
+      "howToApply": "Submit your application through our website.",
+      "companyInformation": "HealthTech Solutions is dedicated to improving healthcare through innovative technology."
+    },
+    {
+      "id": 3,
+      "jobTitle": "Frontend Developer",
+      "companyName": "EduTech Co.",
+      "location": "Visayas",
+      "type": "Full-Time",
+      "monthlySalaryRange": "Php 50,000 - Php 70,000",
+      "jobDescription": "We need a frontend developer to create educational tools for our platform.",
+      "jobRequirements": [
+        "Proficiency in HTML, CSS, and JavaScript",
+        "Experience with React.js",
+        "Understanding of responsive design",
+        "Good communication skills"
+      ],
+      "howToApply": "Email your portfolio to careers@edutechco.com.",
+      "companyInformation": "EduTech Co. creates innovative educational software to enhance learning experiences."
+    },
+    {
+      "id": 4,
+      "jobTitle": "Software Engineer",
+      "companyName": "Green Energy Corp.",
+      "location": "Mindanao",
+      "type": "Full-Time",
+      "monthlySalaryRange": "Php 70,000 - Php 90,000",
+      "jobDescription": "Looking for a software engineer to help develop renewable energy solutions.",
+      "jobRequirements": [
+        "Experience with C++ and Python",
+        "Knowledge of renewable energy systems",
+        "Strong problem-solving abilities",
+        "Team player with good communication skills"
+      ],
+      "howToApply": "Apply online at our careers page.",
+      "companyInformation": "Green Energy Corp. focuses on creating sustainable energy solutions."
+    },
+    {
+      "id": 5,
+      "jobTitle": "Retail Technology Intern",
+      "companyName": "RetailTech",
+      "location": "Luzon",
+      "type": "Internship",
+      "monthlySalaryRange": "Php 15,000 - Php 20,000",
+      "jobDescription": "An internship opportunity for students to gain experience in retail technology.",
+      "jobRequirements": [
+        "Currently enrolled in a Computer Science program",
+        "Basic knowledge of JavaScript and HTML",
+        "Willingness to learn and take on new challenges",
+        "Good teamwork skills"
+      ],
+      "howToApply": "Send your resume to intern@retailtech.com.",
+      "companyInformation": "RetailTech develops technology solutions to enhance the retail shopping experience."
+    },
+    {
+      "id": 6,
+      "jobTitle": "Backend Developer",
+      "companyName": "FinanceSoft",
+      "location": "Visayas",
+      "type": "Full-Time",
+      "monthlySalaryRange": "Php 60,000 - Php 80,000",
+      "jobDescription": "We are hiring a backend developer to work on our financial software products.",
+      "jobRequirements": [
+        "Experience with Node.js and Express",
+        "Understanding of financial systems",
+        "Strong debugging skills",
+        "Ability to work independently"
+      ],
+      "howToApply": "Visit our website to apply.",
+      "companyInformation": "FinanceSoft specializes in software solutions for the financial industry."
+    },
+    {
+      "id": 7,
+      "jobTitle": "Medical Equipment Software Developer",
+      "companyName": "MedEquip Co.",
+      "location": "Luzon",
+      "type": "Part-Time",
+      "monthlySalaryRange": "Php 40,000 - Php 60,000",
+      "jobDescription": "Part-time position for a software developer to maintain medical equipment software.",
+      "jobRequirements": [
+        "Experience with Java and Spring Boot",
+        "Knowledge of medical equipment standards",
+        "Attention to detail",
+        "Ability to work flexible hours"
+      ],
+      "howToApply": "Contact us through our careers portal.",
+      "companyInformation": "MedEquip Co. provides high-quality medical equipment and software."
+    },
+    {
+      "id": 8,
+      "jobTitle": "Mobile App Developer",
+      "companyName": "TravelTech",
+      "location": "Remote",
+      "type": "Full-Time",
+      "monthlySalaryRange": "Php 70,000 - Php 100,000",
+      "jobDescription": "Seeking a mobile app developer to enhance our travel booking app.",
+      "jobRequirements": [
+        "Experience with React Native",
+        "Knowledge of mobile app design principles",
+        "Ability to troubleshoot and debug mobile apps",
+        "Excellent communication skills"
+      ],
+      "howToApply": "Apply by sending your resume to jobs@traveltech.com.",
+      "companyInformation": "TravelTech offers innovative technology solutions for the travel industry."
+    },
+    {
+      "id": 9,
+      "jobTitle": "Full-Stack Developer",
+      "companyName": "Foodie Apps",
+      "location": "Visayas",
+      "type": "Full-Time",
+      "monthlySalaryRange": "Php 60,000 - Php 80,000",
+      "jobDescription": "We need a full-stack developer to work on our food delivery platform.",
+      "jobRequirements": [
+        "Proficiency in JavaScript, Node.js, and React.js",
+        "Experience with MongoDB",
+        "Understanding of RESTful APIs",
+        "Ability to work in an agile environment"
+      ],
+      "howToApply": "Submit your application on our careers page.",
+      "companyInformation": "Foodie Apps develops apps that connect food lovers with local restaurants."
+    },
+    {
+      "id": 10,
+      "jobTitle": "Sports Analytics Developer",
+      "companyName": "SportsTech Ltd.",
+      "location": "Mindanao",
+      "type": "Contract",
+      "monthlySalaryRange": "Php 80,000 - Php 120,000",
+      "jobDescription": "Contract position for a developer to work on sports analytics software.",
+      "jobRequirements": [
+        "Experience with Python and machine learning",
+        "Understanding of sports analytics",
+        "Strong analytical skills",
+        "Ability to work on tight deadlines"
+      ],
+      "howToApply": "Email your resume to hiring@sportstech.com.",
+      "companyInformation": "SportsTech Ltd. creates advanced analytics software for the sports industry."
+    }
+  ]
+  

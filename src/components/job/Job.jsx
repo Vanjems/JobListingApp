@@ -1,12 +1,12 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import jobData from '../../assets/JobData.json'; // Adjust the path if necessary
 
 export default function Job() {
   return (
     <div>
       {/* the div below divides the structure by half horizontally */}
       <div className="flex flex-col">
-
         {/* This div will be the Page Title and the search bar and button */}
         <div className="">
           <div className="container mx-auto text-center">
@@ -28,20 +28,20 @@ export default function Job() {
               <h3 className="font-semibold mb-2">Job Type</h3>
               <div className="grid grid-cols-2">
                 <label className="inline-flex items-center">
-                    <input type="checkbox" className="form-checkbox" />
-                    <span className="ml-2">All</span>
+                  <input type="checkbox" className="form-checkbox" />
+                  <span className="ml-2">All</span>
                 </label>
-                  <label className="inline-flex items-center mt-2">
-                    <input type="checkbox" className="form-checkbox" />
-                    <span className="ml-2">Full-time</span>
+                <label className="inline-flex items-center mt-2">
+                  <input type="checkbox" className="form-checkbox" />
+                  <span className="ml-2">Full-time</span>
                 </label>
-                  <label className="inline-flex items-center mt-2">
-                    <input type="checkbox" className="form-checkbox" />
-                    <span className="ml-2">Part-time</span>
+                <label className="inline-flex items-center mt-2">
+                  <input type="checkbox" className="form-checkbox" />
+                  <span className="ml-2">Part-time</span>
                 </label>
-                  <label className="inline-flex items-center mt-2">
-                    <input type="checkbox" className="form-checkbox" />
-                    <span className="ml-2">Remote</span>
+                <label className="inline-flex items-center mt-2">
+                  <input type="checkbox" className="form-checkbox" />
+                  <span className="ml-2">Remote</span>
                 </label>
               </div>
             </div>
@@ -71,55 +71,21 @@ export default function Job() {
             <h2 className="text-2xl font-bold mb-4 text-center">Job List</h2>
             {/* Job listing items will go here */}
             <div className="space-y-4">
-              <div className="bg-gray-400 p-4 rounded-md shadow-md grid grid-cols-1 md:grid-cols-2 gap-4 overflow-auto h-[400px]">
-                  <div className="bg-white p-4 rounded-md shadow-md flex items-center justify-center">
-                    <div className="flex flex-col items-center">
-                      <div className="w-32 h-32 bg-gray-200 flex items-center justify-center mb-4">
-                        Company Logo or Image Portion
-                      </div>
-                      <div className="w-full h-24 bg-gray-200 mb-4">
-                        {/* Job details here */}
-                      </div>
-                      <a className="px-4 py-2 bg-gray-500 text-white rounded-md" href='/jobdetailspage'>More Details</a>
+              {jobData.map((job) => (
+                <div key={job.id} className="bg-gray-400 p-4 rounded-md shadow-md flex items-center justify-center">
+                  <div className="flex flex-col items-center">
+                    <div className="w-32 h-32 bg-gray-200 flex items-center justify-center mb-4">
+                      Company Logo or Image Portion
                     </div>
-                  </div>
-                  <div className="bg-white p-4 rounded-md shadow-md flex items-center justify-center">
-                    <div className="flex flex-col items-center">
-                      <div className="w-32 h-32 bg-gray-200 flex items-center justify-center mb-4">
-                        Company Logo or Image Portion
-                      </div>
-                      <div className="w-full h-24 bg-gray-200 mb-4">
-                        {/* Job details here */}
-                      </div>
-                      <button className="px-4 py-2 bg-gray-500 text-white rounded-md">More Details</button>
+                    <div className="w-full h-24 bg-gray-200 mb-4 flex flex-col justify-center items-center">
+                      <div className="font-bold text-lg">{job.jobTitle}</div>
+                      <div>{job.monthlySalaryRange}</div>
+                      <div>{job.type}</div>
                     </div>
+                    <Link className="px-4 py-2 bg-gray-500 text-white rounded-md" to={`/jobdetails/${job.id}`}>More Details</Link>
                   </div>
-                  <div className="bg-white p-4 rounded-md shadow-md flex items-center justify-center">
-                    <div className="flex flex-col items-center">
-                      <div className="w-32 h-32 bg-gray-200 flex items-center justify-center mb-4">
-                        Company Logo or Image Portion
-                      </div>
-                      <div className="w-full h-24 bg-gray-200 mb-4">
-                        {/* Job details here */}
-                      </div>
-                      <button className="px-4 py-2 bg-gray-500 text-white rounded-md">More Details</button>
-                    </div>
-                  </div>
-                  <div className="bg-white p-4 rounded-md shadow-md flex items-center justify-center">
-                    <div className="flex flex-col items-center">
-                      <div className="w-32 h-32 bg-gray-200 flex items-center justify-center mb-4">
-                        Company Logo or Image Portion
-                      </div>
-                      <div className="w-full h-24 bg-gray-200 mb-4">
-                        {/* Job details here */}
-                      </div>
-                      <button className="px-4 py-2 bg-gray-500 text-white rounded-md">More Details</button>
-                    </div>
-                  </div>
-              </div>
-              
-              
-              {/* Repeat the above div for more job listings */}
+                </div>
+              ))}
             </div>
           </div>
         </div>
