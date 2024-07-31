@@ -9,7 +9,7 @@ export default function Home() {
     
     <Header />
     <Hero />
-    <Job />
+    {/* <Job /> */}
 
     </div>
   )

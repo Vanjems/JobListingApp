@@ -11,9 +11,8 @@ export default function Header() {
   };
 
   return (
-    <div className="w-full fixed flex flex-row justify-center">
+    <div className="w-full fixed flex flex-row justify-center bg-white shadow-md z-10">
       <div className="mx-auto max-w-[1500px] w-full flex flex-row justify-between items-center px-6 md:px-20 py-6">
-        
         {/* Logo and Title */}
         <div className="flex flex-row justify-center items-center gap-x-7">
           <div className="flex flex-row justify-center items-center gap-x-2">
@@ -26,11 +25,11 @@ export default function Header() {
 
         {/* Navigation Links - Visible on medium and larger screens */}
         <ul className="hidden md:flex gap-x-20 justify-center items-center">
-          <li className="hover:text-yellow-500  duration-300">
-            <a href="#">Home</a>
+          <li className="hover:text-yellow-500  duration-300 ">
+            <a href="/">Home</a>
           </li>
           <li className="hover:text-yellow-500 duration-300">
-            <a href="#">Job</a>
+            <a href="/jobpage">Job</a>
           </li>
           <li className="hover:text-yellow-500 duration-300">
             <a href="#">About us</a>
@@ -42,12 +41,14 @@ export default function Header() {
 
         {/* Sign In and Sign Up Buttons - Visible on medium and larger screens */}
         <div className="hidden md:flex flex-row justify-center items-center gap-x-5">
-          <button className="bg-white text-black font-bold py-2 px-5 rounded hover:bg-yellow-600 hover:text-white duration-700">
-            Sign In
-          </button>
-          <button className="bg-white text-black font-bold py-2 px-5 rounded hover:bg-yellow-600 hover:text-white duration-700">
+          <a className="bg-white text-black font-bold py-2 px-5 rounded hover:bg-yellow-600 hover:text-white duration-700"
+          href='/loginpage'>
+            Log In
+          </a>
+          <a className="bg-white text-black font-bold py-2 px-5 rounded hover:bg-yellow-600 hover:text-white duration-700"
+          href='signuppage'>
             Sign Up
-          </button>
+          </a>
         </div>
 
         {/* Hamburger Menu Button - Visible on small screens */}
@@ -60,12 +61,12 @@ export default function Header() {
         {/* Dropdown Menu - Visible when hamburger menu is open */}
         {menuOpen && (
           <div className="absolute top-20 right-0 bg-white shadow-md p-5 flex flex-col gap-y-5 w-64 z-10 md:hidden">
-            <ul>
+            <ul className=''>
               <li className="hover:text-yellow-500 duration-300">
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li className="hover:text-yellow-500 duration-300">
-                <a href="#">Job</a>
+                <a href="/jobpage">Job</a>
               </li>
               <li className="hover:text-yellow-500 duration-300">
                 <a href="#">About us</a>
@@ -74,7 +75,7 @@ export default function Header() {
                 <a href="#">Contact</a>
               </li>
               <li className="hover:text-yellow-500 duration-300">
-                <a href="#">Sign In</a>
+                <a href="#">Log In</a>
               </li>
               <li className="hover:text-yellow-500 duration-300">
                 <a href="#">Sign Up</a>
