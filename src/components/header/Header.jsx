@@ -9,7 +9,7 @@ export default function Header() {
 
             <ul className='flex flex-row gap-x-5'>
                 <li><a href="/">Home</a></li>
-                <li><a href="/jobdetailspage">Job</a></li>
+                <li><a href="">Job</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Contact</a></li>
             </ul>

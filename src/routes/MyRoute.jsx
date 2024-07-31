@@ -9,7 +9,7 @@ export default function MyRoute() {
     <Routes>
       <Route path='/' element={<App/>}>
         <Route path='/' element={<Home />}/>
-        <Route path='/Jobdetailspage' element={<Jobdetailspage />}/>
+        <Route path='/jobdetails/:id' element={<Jobdetailspage />} />
       </Route>
     </Routes>
   )

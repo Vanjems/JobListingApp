@@ -1,9 +1,7 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import jobData from '../../assets/JobData.json'; // Adjust the path if necessary
+import jobData from '../../assets/JobData.json'; 
 
-export default function Jobdetails() {
-  const { id } = useParams();
+export default function Jobdetails({ id }) {
   const job = jobData.find(job => job.id === parseInt(id));
 
   if (!job) {
