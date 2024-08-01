@@ -3,10 +3,10 @@ import { Target, BookOpenText, UsersRound, HandCoins } from 'lucide-react';
 
 export default function About() {
   return (
-    <div className="max-w-screen-xl mx-auto px-6 py-8 space-y-8 pt-[120px]">
+    <div className="w-full mx-auto px-[120px] py-8 space-y-8 pt-[120px] bg-gray-50">
       {/* About Us Heading */}
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-serif font-bold hover:text-yellow-600 duration-300">About Us</h1>
+        <h1 className="text-4xl font-manrope font-bold text-yellow-600">About Us</h1>
       </div>
 
       {/* Our Mission & Our Story */}
@@ -15,7 +15,7 @@ export default function About() {
         <div className="flex flex-col items-center p-5 border border-gray-200 rounded-lg shadow-lg w-1/2">
           <div className="flex items-center space-x-3 mb-4 justify-center">
             <Target size={50} />
-            <span className="font-serif font-bold text-lg">Our Mission</span>
+            <span className="font-manrope font-bold text-lg">Our Mission</span>
           </div>
           <div className="flex flex-col items-center text-center">
             <span>We aim to connect job seekers with their dream jobs and employers with ideal candidates through an intuitive and efficient platform.</span>
@@ -23,13 +23,13 @@ export default function About() {
         </div>
 
         {/* Our Story */}
-        <div className="flex flex-col items-center p-5 border border-gray-200 rounded-lg shadow-lg w-1/2 ">
+        <div className="flex flex-col items-center p-5 border border-gray-200 rounded-lg shadow-lg w-1/2">
           <div className="flex items-center space-x-3 mb-4 justify-center">
             <BookOpenText size={50} />
-            <span className="font-serif font-bold text-lg">Our Story</span>
+            <span className="font-manrope font-bold text-lg">Our Story</span>
           </div>
           <div className="flex flex-col items-center text-center">
-            <span>Founded in 2024, our company was born out of the need for a streamlined and user-friendly job listing platform. We believe in making the job search process easy and accessible for everyone.</span>
+            <span className='font-manrope'>Founded in 2024, our company was born out of the need for a streamlined and user-friendly job listing platform. We believe in making the job search process easy and accessible for everyone.</span>
           </div>
         </div>
       </div>
@@ -38,10 +38,10 @@ export default function About() {
       <div className="flex flex-col items-center p-5 border border-gray-200 rounded-lg shadow-lg w-full">
         <div className="flex items-center space-x-3 mb-4 justify-center">
           <UsersRound size={50} />
-          <span className="font-serif font-bold text-lg">Our Team</span>
+          <span className="font-manrope font-bold text-lg">Our Team</span>
         </div>
-        <div className="px-5 w-full ">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
+        <div className="px-5 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {/* Team Member 1 */}
             <div className="flex flex-col items-center">
               <img
@@ -49,7 +49,7 @@ export default function About() {
                 src="/about/ivan.jpg"
                 alt="Team member 1"
               />
-              <span className="text-center mt-2">Ivan James Estores <br />Chief Executive Officer & Founder</span>
+              <span className="text-center mt-2 font-manrope">Ivan James Estores <br />Chief Executive Officer & Founder</span>
             </div>
             {/* Team Member 2 */}
             <div className="flex flex-col items-center">
@@ -58,7 +58,7 @@ export default function About() {
                 src="/about/OJ.jpg"
                 alt="Team member 2"
               />
-              <span className="text-center mt-2">Olsen John Gabriel Provido<br />Chief Operating Officer & Co-Founder</span>
+              <span className="text-center mt-2 font-manrope">Olsen John Gabriel Provido<br />Chief Operating Officer & Co-Founder</span>
             </div>
             {/* Team Member 3 */}
             <div className="flex flex-col items-center">
@@ -67,7 +67,7 @@ export default function About() {
                 src="/about/lebron.jpg"
                 alt="Team member 3"
               />
-              <span className="text-center mt-2">LeBron Raymone James Sr. <br />Chief Marketing Officer</span>
+              <span className="text-center mt-2 font-manrope">LeBron Raymone James Sr. <br />Chief Marketing Officer</span>
             </div>
             {/* Team Member 4 */}
             <div className="flex flex-col items-center">
@@ -76,7 +76,7 @@ export default function About() {
                 src="/about/mark.jpg"
                 alt="Team member 4"
               />
-              <span className="text-center mt-2">Mark Elliot Zuckerberg <br />Chief Technology Officer</span>
+              <span className="text-center mt-2 font-manrope">Mark Elliot Zuckerberg <br />Chief Technology Officer</span>
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@ export default function About() {
       <div className="flex flex-col p-5 border border-gray-200 rounded-lg shadow-lg w-full">
         <div className="flex items-center space-x-3 mb-4 justify-center">
           <HandCoins size={50} />
-          <span className="font-serif font-bold text-lg">What we Offer</span>
+          <span className="font-manrope font-bold text-lg">What we Offer</span>
         </div>
         <div className="space-y-8">
           {/* Comprehensive job listings */}
@@ -95,7 +95,7 @@ export default function About() {
               <img className="w-full h-80 object-cover max-w-full rounded-lg" src="/about/Comprehensive.JPEG" alt="Comprehensive job listings" />
             </div>
             <div className="md:w-1/2 p-4 text-center md:text-right flex items-center justify-center text-xl">
-              <span>Comprehensive job listings</span>
+              <span>Comprehensive Job Listings: Explore a wide range of job opportunities tailored to various industries and experience levels.</span>
             </div>
           </div>
           {/* Advanced search and filter options */}
@@ -104,7 +104,7 @@ export default function About() {
               <img className="w-full h-80 object-cover max-w-full rounded-lg" src="/about/Search.JPEG" alt="Advanced search and filter options" />
             </div>
             <div className="md:w-1/2 p-4 text-center md:text-right flex items-center justify-center text-xl">
-              <span>Advanced search and filter options</span>
+              <span>Advanced Search and Filter Options: Easily find the perfect job with our intuitive search and filtering features.</span>
             </div>
           </div>
           {/* Detailed job descriptions and company profiles */}
@@ -113,7 +113,7 @@ export default function About() {
               <img className="w-full h-80 object-cover max-w-full rounded-lg" src="/about/Detailed.JPEG" alt="Detailed job descriptions and company profiles" />
             </div>
             <div className="md:w-1/2 p-4 text-center md:text-right flex items-center justify-center text-xl">
-              <span>Detailed job descriptions and company profiles</span>
+              <span>Detailed Job Descriptions and Company Profiles: Gain insight into potential roles and employers with in-depth information.</span>
             </div>
           </div>
           {/* Resources for job seekers */}
@@ -122,7 +122,7 @@ export default function About() {
               <img className="w-full h-80 object-cover max-w-full rounded-lg" src="/about/Resources.jpg" alt="Resources for job seekers" />
             </div>
             <div className="md:w-1/2 p-4 text-center md:text-right flex items-center justify-center text-xl">
-              <span>Resources for job seekers (career advice, resume tips, etc.)</span>
+              <span>Resources for Job Seekers: Access valuable resources like career advice and resume tips to enhance your job search journey.</span>
             </div>
           </div>
         </div>
