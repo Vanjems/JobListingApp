@@ -53,17 +53,18 @@ export default function Contact() {
   };
 
   return (
-    <div className='relative flex flex-col md:flex-row justify-center items-center min-h-screen p-4 bg-gray-50 pt-[120px]'>
+    <div className='relative flex flex-col md:flex-row justify-center items-center min-h-screen p-4 bg-gray-100 pt-[120px]'>
       {/* Container to ensure equal height */}
       <div className='flex flex-col md:flex-row w-full max-w-5xl'>
         {/* Left container */}
         <div className="flex flex-col justify-between items-center gap-4 p-6 border border-gray-300 rounded-lg shadow-lg w-full md:w-1/2 bg-white md:mr-4 mb-4 md:mb-0">
           {/* Company logo and name */}
           <div className="flex flex-row justify-center items-center gap-2 mb-4 mt-10">
+          <a href="/"className='flex gap-2'>
             <BriefcaseBusiness size={50} />
             <button className="text-black text-2xl font-bold font-Manrope">
               <span className='text-yellow-600'>Kave</span><span className='text-black'>Job</span>
-            </button>
+            </button> </a>
           </div>
 
           {/* Contact information */}
@@ -91,7 +92,7 @@ export default function Contact() {
 
             <div className="flex flex-row items-center gap-2 mb-5">
               <Mail size={30} />
-              <a href="https://www.google.com/intl/en-US/gmail/about/" className="text-black text-lg font-bold font-Manrope hover:text-yellow-700">
+              <a href="https://www.google.com/intl/en-US/gmail/about/" target='_blank' className="text-black text-lg font-bold font-Manrope hover:text-yellow-700">
                 Kavejob@gmail.com
               </a>
             </div>
@@ -101,10 +102,10 @@ export default function Contact() {
           <div className="flex flex-col items-center gap-2 w-full">
             <div className="text-lg font-bold mb-2">Follow Us</div>
             <div className="flex flex-row justify-center items-center gap-2 mb-10">
-              <a href="https://www.facebook.com/" className="text-black hover:text-yellow-700"><Facebook size={30} /></a>
-              <a href="https://www.instagram.com/" className="text-black hover:text-yellow-700"><Instagram size={30} /></a>
-              <a href="https://x.com/?lang=en" className="text-black hover:text-yellow-700"><Twitter size={30} /></a>
-              <a href="https://www.linkedin.com/" className="text-black hover:text-yellow-700"><Linkedin size={30} /></a>
+              <a href="https://www.facebook.com/" target='_blank' className="text-black hover:text-yellow-700"><Facebook size={30} /></a>
+              <a href="https://www.instagram.com/"target='_blank'  className="text-black hover:text-yellow-700"><Instagram size={30} /></a>
+              <a href="https://x.com/?lang=en" target='_blank' className="text-black hover:text-yellow-700"><Twitter size={30} /></a>
+              <a href="https://www.linkedin.com/" target='_blank' className="text-black hover:text-yellow-700"><Linkedin size={30} /></a>
             </div>
           </div>
         </div>
