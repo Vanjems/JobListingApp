@@ -1,37 +1,36 @@
 import React, { useState } from 'react';
-import jobData from '../../assets/JobData.json';
+import { useNavigate } from 'react-router-dom';
 
 export default function Signup() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = async (e) => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Simulate user registration process
     const newUser = { email, password };
 
-    // Simulate saving to a JSON file
-    try {
-      const response = await fetch('/../../assets/Users.json');
-      const users = await response.json();
+    // Check if user already exists (simulated check)
+    const existingUsers = [
+      { email: "existinguser@example.com", password: "password123" }
+    ];
 
-      // Check if user already exists
-      const userExists = users.find(user => user.email === email);
-      if (userExists) {
-        setMessage('User already exists.');
-        return;
-      }
-
-      // Simulate saving the new user to the JSON file
-      // In a real application, you would send this to your backend
-      users.push(newUser);
-      console.log('User registered:', users); // Log the new user data to the console
-      setMessage('User registered successfully! You can log in now.');
-    } catch (error) {
-      console.error('Error fetching users:', error);
-      setMessage('Error signing up. Please try again later.');
+    const userExists = existingUsers.find(user => user.email === email);
+    if (userExists) {
+      setMessage('User already exists.');
+      return;
     }
+
+    // Simulate successful registration
+    console.log('User registered:', newUser); // Log the new user data to the console
+    setMessage('User registered successfully! You can log in now.');
+    setTimeout(() => {
+      navigate('/loginpage');
+    }, 2000); // Redirect to the login page after 2 seconds
   };
 
   return (

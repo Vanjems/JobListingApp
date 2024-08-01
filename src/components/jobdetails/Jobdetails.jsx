@@ -9,14 +9,14 @@ export default function Jobdetails({ id }) {
   }
 
   return (
-    <div className='w-full bg-gray-100 p-6'>
+    <div className='w-full bg-gray-100 p-6 pt-[120px]'>
       <div className="flex flex-col">
         {/* Job Details and the Back Button */}
         <div className="flex flex-row justify-between items-center mb-6">
           <div className="container mx-auto text-center relative">
             <h1 className="text-4xl font-bold text-yellow-600">Job Details</h1>
           </div>
-          <a className='rounded-full bg-yellow-600 text-white py-2 px-5 hover:bg-yellow-500 transition duration-300' href='/'>Back to Listing</a>
+          <a className='rounded-full bg-yellow-600 text-white py-2 px-5 hover:bg-yellow-500 transition duration-300' href='/jobpage'>Back to Listing</a>
         </div>
         
         {/* Job Title to Company images */}
