@@ -35,7 +35,7 @@ export default function Header() {
             <a href="/aboutpage">About us</a>
           </li>
           <li className="hover:text-yellow-500 duration-300">
-            <a href="#">Contact</a>
+            <a href="/contactpage">Contact</a>
           </li>
         </ul>
 
@@ -69,16 +69,16 @@ export default function Header() {
                 <a href="/jobpage">Job</a>
               </li>
               <li className="hover:text-yellow-500 duration-300">
-                <a href="#">About us</a>
+                <a href="/aboutpage">About us</a>
               </li>
               <li className="hover:text-yellow-500 duration-300">
-                <a href="#">Contact</a>
+                <a href="/contactpage">Contact</a>
               </li>
               <li className="hover:text-yellow-500 duration-300">
-                <a href="#">Log In</a>
+                <a href="/loginpage">Log In</a>
               </li>
               <li className="hover:text-yellow-500 duration-300">
-                <a href="#">Sign Up</a>
+                <a href="/signuppage">Sign Up</a>
               </li>
             </ul>
           </div>

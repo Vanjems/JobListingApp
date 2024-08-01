@@ -7,6 +7,7 @@ import Jobpage from '../pages/job/Jobpage'
 import Loginpage from '../pages/loginpage/Loginpage'
 import Signuppage from '../pages/siguppage/Signuppage'
 import Aboutpage from '../pages/aboutpage/Aboutpage'
+import Contactpage from '../pages/contactpage/Contactpage'
 
 export default function MyRoute() {
   return (
@@ -15,6 +16,7 @@ export default function MyRoute() {
         <Route path='/' element={<Home />}/>
         <Route path='/jobpage' element={<Jobpage />}/>
         <Route path='/aboutpage' element={<Aboutpage />}/>
+        <Route path='/contactpage' element={<Contactpage />}/>
         <Route path='/jobdetails/:id' element={<Jobdetailspage />} />
         <Route path='/loginpage' element={<Loginpage />}/>      
         <Route path='/signuppage' element={<Signuppage />}/>      
