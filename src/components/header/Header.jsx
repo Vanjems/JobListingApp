@@ -32,7 +32,7 @@ export default function Header() {
             <a href="/jobpage">Job</a>
           </li>
           <li className="hover:text-yellow-500 duration-300">
-            <a href="#">About us</a>
+            <a href="/aboutpage">About us</a>
           </li>
           <li className="hover:text-yellow-500 duration-300">
             <a href="#">Contact</a>

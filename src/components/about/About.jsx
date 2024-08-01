@@ -3,7 +3,7 @@ import { Target, BookOpenText, UsersRound, HandCoins } from 'lucide-react';
 
 export default function About() {
   return (
-    <div className="max-w-screen-xl mx-auto px-6 py-8 space-y-8">
+    <div className="max-w-screen-xl mx-auto px-6 py-8 space-y-8 pt-[120px]">
       {/* Our Mission & Our Story */}
       <div className="flex flex-row justify-between space-x-4">
         {/* Our Mission */}
