@@ -4,6 +4,11 @@ import { Target, BookOpenText, UsersRound, HandCoins } from 'lucide-react';
 export default function About() {
   return (
     <div className="max-w-screen-xl mx-auto px-6 py-8 space-y-8 pt-[120px]">
+      {/* About Us Heading */}
+      <div className="text-center mb-8">
+        <h1 className="text-4xl font-serif font-bold hover:text-yellow-600 duration-300">About Us</h1>
+      </div>
+
       {/* Our Mission & Our Story */}
       <div className="flex flex-row justify-between space-x-4">
         {/* Our Mission */}
@@ -18,7 +23,7 @@ export default function About() {
         </div>
 
         {/* Our Story */}
-        <div className="flex flex-col items-center p-5 border border-gray-200 rounded-lg shadow-lg w-1/2">
+        <div className="flex flex-col items-center p-5 border border-gray-200 rounded-lg shadow-lg w-1/2 ">
           <div className="flex items-center space-x-3 mb-4 justify-center">
             <BookOpenText size={50} />
             <span className="font-serif font-bold text-lg">Our Story</span>
@@ -35,8 +40,8 @@ export default function About() {
           <UsersRound size={50} />
           <span className="font-serif font-bold text-lg">Our Team</span>
         </div>
-        <div className="px-5 w-full">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="px-5 w-full ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
             {/* Team Member 1 */}
             <div className="flex flex-col items-center">
               <img
@@ -44,7 +49,7 @@ export default function About() {
                 src="/about/ivan.jpg"
                 alt="Team member 1"
               />
-              <span className="text-center mt-2">Ivan James Estores <br />CEO</span>
+              <span className="text-center mt-2">Ivan James Estores <br />Chief Executive Officer & Founder</span>
             </div>
             {/* Team Member 2 */}
             <div className="flex flex-col items-center">
@@ -53,7 +58,7 @@ export default function About() {
                 src="/about/OJ.jpg"
                 alt="Team member 2"
               />
-              <span className="text-center mt-2">Olsen John Gabriel Provido<br />CTO</span>
+              <span className="text-center mt-2">Olsen John Gabriel Provido<br />Chief Operating Officer & Co-Founder</span>
             </div>
             {/* Team Member 3 */}
             <div className="flex flex-col items-center">
@@ -62,7 +67,7 @@ export default function About() {
                 src="/about/lebron.jpg"
                 alt="Team member 3"
               />
-              <span className="text-center mt-2">LeBron Raymone James Sr. <br />COO</span>
+              <span className="text-center mt-2">LeBron Raymone James Sr. <br />Chief Marketing Officer</span>
             </div>
             {/* Team Member 4 */}
             <div className="flex flex-col items-center">
@@ -71,7 +76,7 @@ export default function About() {
                 src="/about/mark.jpg"
                 alt="Team member 4"
               />
-              <span className="text-center mt-2">Mark Elliot Zuckerberg <br />CMO</span>
+              <span className="text-center mt-2">Mark Elliot Zuckerberg <br />Chief Technology Officer</span>
             </div>
           </div>
         </div>
@@ -85,7 +90,7 @@ export default function About() {
         </div>
         <div className="space-y-8">
           {/* Comprehensive job listings */}
-          <div className="flex flex-col md:flex-row-reverse items-center">
+          <div className="flex flex-col md:flex-row-reverse items-center p-5 border border-gray-200 rounded-lg shadow-lg">
             <div className="md:w-1/2 p-4 flex justify-center">
               <img className="w-full h-80 object-cover max-w-full rounded-lg" src="/about/Comprehensive.JPEG" alt="Comprehensive job listings" />
             </div>
@@ -94,7 +99,7 @@ export default function About() {
             </div>
           </div>
           {/* Advanced search and filter options */}
-          <div className="flex flex-col md:flex-row items-center">
+          <div className="flex flex-col md:flex-row items-center p-5 border border-gray-200 rounded-lg shadow-lg">
             <div className="md:w-1/2 p-4 flex justify-center">
               <img className="w-full h-80 object-cover max-w-full rounded-lg" src="/about/Search.JPEG" alt="Advanced search and filter options" />
             </div>
@@ -103,7 +108,7 @@ export default function About() {
             </div>
           </div>
           {/* Detailed job descriptions and company profiles */}
-          <div className="flex flex-col md:flex-row-reverse items-center">
+          <div className="flex flex-col md:flex-row-reverse items-center p-5 border border-gray-200 rounded-lg shadow-lg">
             <div className="md:w-1/2 p-4 flex justify-center">
               <img className="w-full h-80 object-cover max-w-full rounded-lg" src="/about/Detailed.JPEG" alt="Detailed job descriptions and company profiles" />
             </div>
@@ -112,7 +117,7 @@ export default function About() {
             </div>
           </div>
           {/* Resources for job seekers */}
-          <div className="flex flex-col md:flex-row items-center">
+          <div className="flex flex-col md:flex-row items-center p-5 border border-gray-200 rounded-lg shadow-lg">
             <div className="md:w-1/2 p-4 flex justify-center">
               <img className="w-full h-80 object-cover max-w-full rounded-lg" src="/about/Resources.jpg" alt="Resources for job seekers" />
             </div>
