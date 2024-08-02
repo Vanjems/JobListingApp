@@ -94,8 +94,9 @@ export default function About() {
             <div className="sm:w-1/2 p-4 flex justify-center">
               <img className="w-full h-60 sm:h-80 object-cover rounded-lg" src="/about/Comprehensive.JPEG" alt="Comprehensive job listings" />
             </div>
-            <div className="sm:w-1/2 p-4 text-center sm:text-right flex items-center justify-center text-base sm:text-lg">
-              <span>Comprehensive Job Listings: Explore a wide range of job opportunities tailored to various industries and experience levels.</span>
+            <div className="sm:w-1/2 p-4 flex flex-col items-center justify-center text-center sm:text-left">
+              <span className="font-manrope font-bold text-lg sm:text-xl mb-2">Comprehensive Job Listings</span>
+              <span className="text-base sm:text-lg">Explore a wide range of job opportunities tailored to various industries and experience levels.</span>
             </div>
           </div>
           {/* Advanced search and filter options */}
@@ -103,8 +104,9 @@ export default function About() {
             <div className="sm:w-1/2 p-4 flex justify-center">
               <img className="w-full h-60 sm:h-80 object-cover rounded-lg" src="/about/Search.JPEG" alt="Advanced search and filter options" />
             </div>
-            <div className="sm:w-1/2 p-4 text-center sm:text-right flex items-center justify-center text-base sm:text-lg">
-              <span>Advanced Search and Filter Options: Easily find the perfect job with our intuitive search and filtering features.</span>
+            <div className="sm:w-1/2 p-4 flex flex-col items-center justify-center text-center sm:text-left">
+              <span className="font-manrope font-bold text-lg sm:text-xl mb-2">Advanced Search and Filter Options</span>
+              <span className="text-base sm:text-lg">Easily find the perfect job with our intuitive search and filtering features.</span>
             </div>
           </div>
           {/* Detailed job descriptions and company profiles */}
@@ -112,8 +114,9 @@ export default function About() {
             <div className="sm:w-1/2 p-4 flex justify-center">
               <img className="w-full h-60 sm:h-80 object-cover rounded-lg" src="/about/Detailed.JPEG" alt="Detailed job descriptions and company profiles" />
             </div>
-            <div className="sm:w-1/2 p-4 text-center sm:text-right flex items-center justify-center text-base sm:text-lg">
-              <span>Detailed Job Descriptions and Company Profiles: Gain insight into potential roles and employers with in-depth information.</span>
+            <div className="sm:w-1/2 p-4 flex flex-col items-center justify-center text-center sm:text-left">
+              <span className="font-manrope font-bold text-lg sm:text-xl mb-2">Detailed Job Descriptions and Company Profiles</span>
+              <span className="text-base sm:text-lg">Gain insight into potential roles and employers with in-depth information.</span>
             </div>
           </div>
           {/* Resources for job seekers */}
@@ -121,8 +124,9 @@ export default function About() {
             <div className="sm:w-1/2 p-4 flex justify-center">
               <img className="w-full h-60 sm:h-80 object-cover rounded-lg" src="/about/Resources.jpg" alt="Resources for job seekers" />
             </div>
-            <div className="sm:w-1/2 p-4 text-center sm:text-right flex items-center justify-center text-base sm:text-lg">
-              <span>Resources for Job Seekers: Access valuable resources like career advice and resume tips to enhance your job search journey.</span>
+            <div className="sm:w-1/2 p-4 flex flex-col items-center justify-center text-center sm:text-left">
+              <span className="font-manrope font-bold text-lg sm:text-xl mb-2">Resources for Job Seekers</span>
+              <span className="text-base sm:text-lg">Access valuable resources like career advice and resume tips to enhance your job search journey.</span>
             </div>
           </div>
         </div>
