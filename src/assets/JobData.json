@@ -169,6 +169,176 @@
       ],
       "howToApply": "Email your resume to hiring@sportstech.com.",
       "companyInformation": "SportsTech Ltd. creates advanced analytics software for the sports industry."
-    }
+    },
+    {
+      "id": 11,
+      "jobTitle": "Cloud Solutions Architect",
+      "companyName": "Tech Solutions Inc.",
+      "location": "Visayas",
+      "type": "Remote",
+      "monthlySalaryRange": "Php 90,000 - Php 130,000",
+      "jobDescription": "Looking for a cloud solutions architect to design scalable cloud architectures.",
+      "jobRequirements": [
+          "Experience with AWS or Azure",
+          "Strong knowledge of cloud security practices",
+          "Excellent communication skills",
+          "Ability to lead technical projects"
+      ],
+      "howToApply": "Send your resume to careers@techsolutions.com.",
+      "companyInformation": "Tech Solutions Inc. offers cloud computing solutions for various industries."
+  },
+  {
+      "id": 12,
+      "jobTitle": "Data Analyst",
+      "companyName": "Data Insights",
+      "location": "Mindanao",
+      "type": "Full-Time",
+      "monthlySalaryRange": "Php 50,000 - Php 70,000",
+      "jobDescription": "Join our team as a data analyst to provide insights through data analysis.",
+      "jobRequirements": [
+          "Experience with SQL and Python",
+          "Strong analytical skills",
+          "Knowledge of data visualization tools",
+          "Ability to work with large datasets"
+      ],
+      "howToApply": "Apply via our website.",
+      "companyInformation": "Data Insights specializes in providing data-driven solutions for businesses."
+  },
+  {
+      "id": 13,
+      "jobTitle": "UI/UX Designer",
+      "companyName": "Creative Studio",
+      "location": "Luzon",
+      "type": "Part-Time",
+      "monthlySalaryRange": "Php 40,000 - Php 60,000",
+      "jobDescription": "We are looking for a UI/UX designer to create user-friendly interfaces.",
+      "jobRequirements": [
+          "Proficiency in design tools like Figma and Adobe XD",
+          "Understanding of user-centered design principles",
+          "Strong portfolio showcasing design work",
+          "Good communication skills"
+      ],
+      "howToApply": "Email your portfolio to jobs@creativestudio.com.",
+      "companyInformation": "Creative Studio provides design solutions for various clients."
+  },
+  {
+      "id": 14,
+      "jobTitle": "Quality Assurance Tester",
+      "companyName": "Testify Tech",
+      "location": "Visayas",
+      "type": "Full-Time",
+      "monthlySalaryRange": "Php 30,000 - Php 50,000",
+      "jobDescription": "Looking for a QA tester to ensure the quality of our software products.",
+      "jobRequirements": [
+          "Experience in software testing",
+          "Strong attention to detail",
+          "Ability to write clear test cases",
+          "Good problem-solving skills"
+      ],
+      "howToApply": "Visit our careers page to apply.",
+      "companyInformation": "Testify Tech specializes in software testing and quality assurance."
+  },
+  {
+      "id": 15,
+      "jobTitle": "DevOps Engineer",
+      "companyName": "CloudOps",
+      "location": "Remote",
+      "type": "Full-Time",
+      "monthlySalaryRange": "Php 70,000 - Php 100,000",
+      "jobDescription": "Seeking a DevOps engineer to streamline our software development process.",
+      "jobRequirements": [
+          "Experience with CI/CD tools",
+          "Strong knowledge of Linux systems",
+          "Proficiency in scripting languages",
+          "Ability to work collaboratively"
+      ],
+      "howToApply": "Send your resume to careers@cloudops.com.",
+      "companyInformation": "CloudOps provides DevOps solutions for cloud-based applications."
+  },
+  {
+    "id": 16,
+    "jobTitle": "Game Developer",
+    "companyName": "PlayZone Studios",
+    "location": "Mindanao",
+    "type": "Full-Time",
+    "monthlySalaryRange": "Php 70,000 - Php 90,000",
+    "jobDescription": "Join our team to develop engaging mobile and PC games.",
+    "jobRequirements": [
+        "Experience with Unity or Unreal Engine",
+        "Proficiency in C# or C++",
+        "Strong understanding of game design principles",
+        "Ability to work in a collaborative environment"
+    ],
+    "howToApply": "Send your resume and portfolio to careers@playzonestudios.com.",
+    "companyInformation": "PlayZone Studios creates fun and innovative gaming experiences."
+},
+{
+    "id": 17,
+    "jobTitle": "System Administrator",
+    "companyName": "NetSecure",
+    "location": "Visayas",
+    "type": "Remote",
+    "monthlySalaryRange": "Php 50,000 - Php 70,000",
+    "jobDescription": "Looking for a system administrator to manage our IT infrastructure.",
+    "jobRequirements": [
+        "Experience with Linux and Windows server environments",
+        "Knowledge of network security protocols",
+        "Strong troubleshooting skills",
+        "Ability to work independently"
+    ],
+    "howToApply": "Apply through our website.",
+    "companyInformation": "NetSecure specializes in IT security solutions for businesses."
+},
+{
+    "id": 18,
+    "jobTitle": "Technical Writer",
+    "companyName": "WriteTech",
+    "location": "Luzon",
+    "type": "Part-Time",
+    "monthlySalaryRange": "Php 30,000 - Php 50,000",
+    "jobDescription": "We are looking for a technical writer to create user manuals and guides.",
+    "jobRequirements": [
+        "Strong writing skills with attention to detail",
+        "Ability to understand technical concepts",
+        "Experience with documentation tools",
+        "Good communication skills"
+    ],
+    "howToApply": "Email your resume to jobs@writetech.com.",
+    "companyInformation": "WriteTech provides technical writing services for various industries."
+},
+{
+    "id": 19,
+    "jobTitle": "SEO Specialist",
+    "companyName": "MarketPro",
+    "location": "Mindanao",
+    "type": "Full-Time",
+    "monthlySalaryRange": "Php 40,000 - Php 60,000",
+    "jobDescription": "Join our marketing team as an SEO specialist to improve our online visibility.",
+    "jobRequirements": [
+        "Experience with SEO tools like Google Analytics and SEMrush",
+        "Strong understanding of on-page and off-page SEO techniques",
+        "Ability to analyze and report on website performance",
+        "Good communication skills"
+    ],
+    "howToApply": "Submit your application through our website.",
+    "companyInformation": "MarketPro helps businesses enhance their online presence through effective marketing strategies."
+},
+{
+    "id": 20,
+    "jobTitle": "Network Engineer",
+    "companyName": "ConnectTech",
+    "location": "Remote",
+    "type": "Full-Time",
+    "monthlySalaryRange": "Php 70,000 - Php 100,000",
+    "jobDescription": "Looking for a network engineer to design and maintain our network infrastructure.",
+    "jobRequirements": [
+        "Experience with Cisco networking technologies",
+        "Knowledge of network protocols and security",
+        "Strong troubleshooting and problem-solving skills",
+        "Ability to work in a fast-paced environment"
+    ],
+    "howToApply": "Email your resume to careers@connecttech.com.",
+    "companyInformation": "ConnectTech provides network solutions for businesses of all sizes."
+}
   ]
   

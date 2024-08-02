@@ -34,21 +34,26 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="w-full fixed top-0 left-0 right-0 flex flex-row bg-white shadow-md z-10">
+    <div className="w-full fixed top-0 left-0 right-0 flex flex-row bg-white shadow-md z-50">
       <div className="w-full flex justify-between items-center px-6 py-6">
         {/* Logo and Title */}
         <div className="flex items-center gap-x-2">
-          <BriefcaseBusiness size={50} />
-          <button className="text-black text-2xl font-bold font-Manrope">
-            <a href="/"><span className='text-yellow-600'>Kave</span><span className='text-black'>Job</span></a>
-          </button>
+          <a href="/" className='flex'>
+            <BriefcaseBusiness size={50} />
+            <button className="text-black text-2xl font-bold font-Manrope">
+              <span className='text-yellow-600'>Kave</span><span className='text-black'>Job</span>
+            </button>
+          </a>
         </div>
 
         {/* Navigation Links and Hamburger Menu Button */}
         {isMobile ? (
           <div className="flex items-center">
             {/* Hamburger Menu Button */}
-            <button onClick={toggleMenu}>
+            <button
+              onClick={toggleMenu}
+              className="flex items-center justify-center w-10 h-10 p-2 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-yellow-600"
+            >
               {menuOpen ? <X size={30} /> : <Menu size={30} />}
             </button>
           </div>
@@ -73,7 +78,10 @@ export default function Header() {
             </div>
             <div className="flex items-center">
               {/* Hamburger Menu Button */}
-              <button onClick={toggleMenu}>
+              <button
+                onClick={toggleMenu}
+                className="flex items-center justify-center w-10 h-10 p-2 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-yellow-600"
+              >
                 {menuOpen ? <X size={30} /> : <Menu size={30} />}
               </button>
             </div>
@@ -101,9 +109,9 @@ export default function Header() {
         {/* Sign In and Sign Up Buttons */}
         {!isMobile && !isTablet && (
           <div className="flex items-center gap-x-5">
-            <a className="bg-white text-black font-bold py-2 px-5 rounded hover:bg-yellow-600 hover:text-white duration-700"
+            <a className="bg-white text-black font-semibold py-2 px-5 rounded hover:bg-yellow-600 hover:text-white duration-700"
                href='/loginpage'>Log In</a>
-            <a className="bg-yellow-600 text-white font-bold py-2 px-5 rounded hover:bg-white hover:text-black duration-700"
+            <a className="bg-yellow-600 text-white font-semibold py-2 px-5 rounded hover:bg-white hover:text-black duration-700"
                href='/signuppage'>Sign Up</a>
           </div>
         )}
@@ -111,26 +119,26 @@ export default function Header() {
 
       {/* Dropdown Menu - Visible when hamburger menu is open */}
       {menuOpen && (
-        <div className="absolute top-20 right-0 bg-white shadow-md p-5 flex flex-col gap-y-5 w-64 z-10">
-        <ul>
-          {isMobile && (
-            <>
-              <li className="hover:text-yellow-500 duration-300"><a href="/">Home</a></li>
-              <li className="hover:text-yellow-500 duration-300"><a href="/jobpage">Job</a></li>
-              <li className="hover:text-yellow-500 duration-300"><a href="/aboutpage">About</a></li>
-              <li className="hover:text-yellow-500 duration-300"><a href="/contactpage">Contact</a></li>
-              <li className="hover:text-yellow-500 duration-300"><a href="/loginpage">Log In</a></li>
-              <li className="hover:text-yellow-500 duration-300"><a href="/signuppage">Sign Up</a></li>
-            </>
-          )}
-          {isTablet && (
-            <>
-              <li className="hover:text-yellow-500 duration-300"><a href="/loginpage">Log In</a></li>
-              <li className="hover:text-yellow-500 duration-300"><a href="/signuppage">Sign Up</a></li>
-            </>
-          )}
-        </ul>
-      </div>
+        <div className="absolute top-20 right-0 bg-white shadow-md rounded-md p-5 flex flex-col gap-y-5 w-64 z-10">
+          <ul className='flex flex-col gap-2'>
+            {isMobile && (
+              <>
+                <li className="hover:text-yellow-500 duration-300"><a href="/">Home</a></li>
+                <li className="hover:text-yellow-500 duration-300"><a href="/jobpage">Job</a></li>
+                <li className="hover:text-yellow-500 duration-300"><a href="/aboutpage">About</a></li>
+                <li className="hover:text-yellow-500 duration-300"><a href="/contactpage">Contact</a></li>
+                <li className="hover:text-yellow-500 duration-300"><a href="/loginpage">Log In</a></li>
+                <li className="hover:text-yellow-500 duration-300"><a href="/signuppage">Sign Up</a></li>
+              </>
+            )}
+            {isTablet && (
+              <>
+                <li className="hover:text-yellow-500 duration-300"><a href="/loginpage">Log In</a></li>
+                <li className="hover:text-yellow-500 duration-300"><a href="/signuppage">Sign Up</a></li>
+              </>
+            )}
+          </ul>
+        </div>
       )}
     </div>
   );

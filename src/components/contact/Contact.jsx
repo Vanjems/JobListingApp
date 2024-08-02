@@ -53,7 +53,7 @@ export default function Contact() {
   };
 
   return (
-    <div className='relative flex flex-col md:flex-row justify-center items-center min-h-screen p-4 bg-gray-100 pt-[120px]'>
+    <div className='relative flex flex-col md:flex-row justify-center items-center min-h-screen p-4 bg-gray-50 pt-[120px]'>
       {/* Container to ensure equal height */}
       <div className='flex flex-col md:flex-row w-full max-w-5xl'>
         {/* Left container */}

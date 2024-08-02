@@ -96,6 +96,12 @@ export default function Job() {
     }, 1000); // Simulate a loading delay
   };
 
+  const clearAll = () => {
+    setFilters({ jobType: [], location: [] });
+    setSearchQuery('');
+    setFilteredJobs(jobData);
+  };
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -190,6 +196,12 @@ export default function Job() {
               onClick={handleSearch}
             >
               Search
+            </button>
+            <button
+              className="ml-2 p-2 bg-red-500 text-white rounded-md hover:bg-red-400 duration-1000"
+              onClick={clearAll}
+            >
+              Clear All
             </button>
           </div>
         </div>
